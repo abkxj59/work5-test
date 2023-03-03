@@ -1,0 +1,80 @@
+.account {
+  display: flex;
+}
+
+.account__mail {
+  padding: 22px 20px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  color: #7b7b7b;
+  transition: $trans-default;
+  margin-right: 16px;
+
+  @include hover-focus {
+    color: $color-purple;
+    border-color: $color-purple;
+  }
+}
+
+.account__mail-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -6px;
+    right: -6px;
+    width: 13px;
+    height: 13px;
+    box-sizing: border-box;
+    background-color: #e42626;
+    border: 3px solid $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.account__profile {
+  display: flex;
+  align-items: center;
+  padding: 10px 17px;
+  padding-right: 38px;
+  background-color: $color-default-white;
+  border-radius: 5px;
+  box-shadow: 0 0 16px rgba(136, 167, 245, 0.18);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  transition: $trans-default;
+  color: #7d7d7d;
+
+  @include hover-focus {
+    color: $color-purple;
+    box-shadow: 0 0 32px rgba(136, 167, 245, 0.6);
+
+    .account__avatar {
+      border-color: rgba($color-purple, 0.8);
+    }
+  }
+
+  @include vp-768 {
+    padding: 8px;
+  }
+}
+
+.account__avatar {
+  border-radius: 50%;
+  border: 2px solid #d9d9d9;
+  margin-right: 16px;
+  transition: $trans-default;
+
+  @include vp-768 {
+    margin: 0;
+  }
+}
+
+.account__text {
+  @include vp-768 {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/page";
+@import "blocks/main-header";
+@import "blocks/nav";
+@import "blocks/account";
+@import "blocks/breadcrumbs";
+@import "blocks/shops";
+@import "blocks/new-shop";

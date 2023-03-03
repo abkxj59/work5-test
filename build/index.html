@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Work5 test</title>
+  <meta name="description" content="Решение тестового задания на вакансию Frontend-разработчик в компанию Work5">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+</head>
+<body class="page__body">
+  <header class="page__header main-header">
+    <button type="button" class="btn main-header__menu-button">
+      <svg class="main-header__menu-icon" width="23" height="23">
+        <use xlink:href="img/sprite.svg#menu"></use>
+      </svg>
+    </button>
+    <div class="main-header__nav">
+      <a href="#" class="main-header__logo">
+        <picture>
+          <source type="image/webp" srcset="img/Logo@2x.webp 2x, img/Logo.webp 1x">
+          <img class="main-header__logo-pic" src="img/Logo.png" srcset="img/Logo@2x.png 2x" alt="logo work5" width="85" height="32">
+        </picture>
+      </a>
+      <ul class="main-header__nav-list nav">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-house"></use>
+            </svg>
+            <span class="nav__text">Главная</span>
+          </a>
+        </li>
+        <li class="nav__item nav__item--current">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="nav__text">Мои магазины</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-speaker"></use>
+            </svg>
+            <span class="nav__text">Промматериалы</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-chart"></use>
+            </svg>
+            <span class="nav__text">Статистика</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-wallet"></use>
+            </svg>
+            <span class="nav__text">Баланс</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-account"></use>
+            </svg>
+            <span class="nav__text">Персональные данные</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-faq"></use>
+            </svg>
+            <span class="nav__text">FAQ</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-support"></use>
+            </svg>
+            <span class="nav__text">Техподдержка</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#icon-exit"></use>
+            </svg>
+            <span class="nav__text">Выход</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-header__account account">
+      <a href="#" class="account__mail">
+        <div class="account__mail-icon">
+          <svg width="23" height="18">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+        </div>
+      </a>
+      <a href="#" class="account__profile">
+        <picture>
+          <source type="image/webp" srcset="img/avatar@2x.webp 2x, img/avatar.webp 1x">
+          <img class="account__avatar" src="img/avatar.jpg" srcset="img/avatar@2x.jpg 2x" width="41" height="41" alt="аватар пользователя">
+        </picture>
+        <span class="account__text">Максим Добжанский</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="breadcrumbs" aria-label="breadcrumb">
+      <h2 class="page__section-heading visually-hidden">Хлебные крошки</h2>
+      <ol class="breadcrumbs__list breadcrumb">
+        <li class="breadcrumbs__item breadcrumb-item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumb-item active" aria-current="page">
+          <a class="breadcrumbs__link">Мои магазины</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="shops">
+      <button type="button" class="shops__button-new btn">
+        <svg width="11" height="11">
+          <use xlink:href="img/sprite.svg#plus"></use>
+        </svg>
+        Создать свой магазин
+      </button>
+      <h2 class="page__section-heading shops__heading">Управление магазинами</h2>
+      <div class="shops__table-wrapper table-responsive-sm">
+        <table class="shops__table table">
+          <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Адрес</th>
+            <th>Действие</th>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>Дипломная работа</td>
+            <td>http://www.work5.ru/services</td>
+            <td>
+              <button type="button" class="shops__button-edit btn">
+                <svg width="12" height="17">
+                  <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                </svg>
+                Редактировать</button>
+              <button type="button" class="shops__button-delete btn">
+                <svg width="12" height="12">
+                  <use xlink:href="img/sprite.svg#cross"></use>
+                </svg>
+                Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td>12345</td>
+            <td>Дипломная работа</td>
+            <td>http://www.work5.ru/services</td>
+            <td>
+              <button type="button" class="shops__button-edit btn">
+                <svg width="12" height="17">
+                  <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                </svg>
+                Редактировать</button>
+              <button type="button" class="shops__button-delete btn">
+                <svg width="12" height="12">
+                  <use xlink:href="img/sprite.svg#cross"></use>
+                </svg>
+                Удалить</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="new-shop">
+      <div class="new-shop__overlay"></div>
+      <div class="new-shop__content">
+        <h2 class="new-shop__heading">Создать магазин</h2>
+        <button type="button" class="new-shop__close btn">
+          <svg width="7" height="7">
+            <use xlink:href="img/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <form class="new-shop__form">
+          <div class="new-shop__wrapper new-shop__wrapper--s">
+            <label class="new-shop__label">
+              <span>Шаблон</span>
+              <select name="template" id="template" class="new-shop__select new-shop__select--nojs">
+                <option value="standart" selected>Стандартный</option>
+                <option value="alternative">Альтернативный</option>
+              </select>
+            </label>
+            <ul class="new-shop__select-list new-shop__select-list--nojs">
+              <li class="new-shop__select-item new-shop__select-item--selected">Стандартный</li>
+              <li class="new-shop__select-item">Альтернативный</li>
+            </ul>
+          </div>
+          <div class="new-shop__wrapper new-shop__wrapper--s">
+            <label class="new-shop__label">
+              <span>Цветовая схема</span>
+              <select name="color-theme" id="color-theme" class="new-shop__select new-shop__select--nojs">
+                <option value="classic" selected>Классическая</option>
+                <option value="alternative">Альтернативная</option>
+              </select>
+            </label>
+            <ul class="new-shop__select-list new-shop__select-list--nojs">
+              <li class="new-shop__select-item new-shop__select-item--selected">Классическая</li>
+              <li class="new-shop__select-item">Альтернативная</li>
+            </ul>
+          </div>
+          <div class="new-shop__wrapper new-shop__wrapper--l">
+            <label class="new-shop__label">
+              <span>Домен</span>
+              <input class="new-shop__input" type="text" name="domen" placeholder="Например: ivangrozniy" required>
+            </label>
+          </div>
+          <div class="new-shop__warning">
+            <svg width="52" height="52">
+              <use xlink:href="img/sprite.svg#icon-warning"></use>
+            </svg>
+            <p>В&nbsp;названии домена разрешены латиница и "-", запрещается использовать словосочетание Work&nbsp;5. После создания магазина&nbsp;Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по&nbsp;<a href="#">ссылке</a></p>
+          </div>
+          <button type="button" class="new-shop__cancel btn">Отмена</button>
+          <button type="submit" class="new-shop__create btn">Создать</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/main.min.js"></script>
+</body>
+</html>

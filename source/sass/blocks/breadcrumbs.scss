@@ -1,0 +1,31 @@
+.breadcrumbs {
+  padding-top: 19px;
+  color: #656565;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+
+  a {
+    color: inherit;
+
+    @include hover-focus {
+      color: $color-purple;
+    }
+  }
+}
+
+.breadcrumbs__list {
+  align-self: center;
+}
+
+.breadcrumbs__item {
+  --bs-breadcrumb-divider: url("../img/sprite/arrow.svg");
+
+  &::before {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    margin-top: -1px;
+    margin-left: -3px;
+    width: 7px;
+  }
+}
